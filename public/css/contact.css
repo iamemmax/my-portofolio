@@ -226,13 +226,29 @@ body{
     z-index: 9999;
     margin-bottom: 2rem;
 }
-    .top_form{
+.top_form{
         flex-direction: column;
     }
     .top_form > div{
         /* border: 2px solid red; */
         width: 100% !important;
-      
+        
+    }
+    
+    .contact-form > form button{
+        padding: 10px 25px;
+        border: 1px solid #ff4a57;
+        border-radius: 20px;
+        color: #eee;
+        font-weight: 500;
+        transition: background .5s ease;
+        background-color: unset;
+
+    }
+    .contact-form > form button:hover{
+        background-color: #ff4a57;
+        transition: background .5s ease;
+ 
     }
 }
 
@@ -253,5 +269,21 @@ body{
     .contact-form{
         height: auto;
         width: 70%;
+    }
+
+    .contact-form > form button{
+        padding: 10px 25px;
+        border: 1px solid #ff4a57;
+        border-radius: 20px;
+        color: #eee;
+        font-weight: 500;
+        transition: background .5s ease;
+        background-color: unset;
+
+    }
+    .contact-form > form button:hover{
+        background-color: #ff4a57;
+        transition: background .5s ease;
+ 
     }
 }
