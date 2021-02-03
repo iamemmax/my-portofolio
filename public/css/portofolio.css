@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+:root{
+    /* --primarry:#ff4a57; */
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+.portofolio_container{
+    background-color: #2b2d42;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.portofolio_inner{
+    width: 85%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 3rem;
+}
+.portofolio_inner > h2{
+    font-size: 25px;
+    color: #fff;
+    padding: 5px;
+    font-weight: 700;
+}
+
+
+.portofolio_inner > p{
+    font-size: 14px;
+    font-family: 'Montserrat'  sans-serif;
+    color: rgba(238, 238, 238, 0.562);
+    /* border: 2px solid red; */
+    line-height: 26px;
+    width: 40%;
+    text-align: center;
+    margin: 0px auto;
+    max-width: 100%;
+  }
+
+
+  .portofolio_inner > span{
+    border-bottom: 3px solid var(--primarry);
+    width: 50px !important;
+    display: block;
+    height: 40px !important;
+    margin: 0px auto;
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .portofolio_inner > .portofolio_links{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      margin: 0px auto;
+      max-width: 100%;
+     
+    }
+    .portofolio_links > div{
+      width: 100px;
+      background-color: #1f2235a1;
+      padding: 7px 0px;
+      margin: 5px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-bottom: 2rem !important;
+    }
+    .portofolio_links > div a{
+        color: rgba(238, 238, 238, 0.801); 
+        font-size: 14px;
+        font-weight: 500;
+        padding: 7px 0px;
+    
+    }
+
+    .portofolio_links > div:hover{
+      background: var(--primarry);
+     transition:  background .5s ease;
+  }
+  .portofolio_links > .active{
+      background: #1f2235a1;
+      border: 1px solid var(--primarry);
+}
+  
+ .portofolio_container > .project{
+         /* border: 2px solid red; */
+          width: 85%;
+          height: 500px;
+          position: relative;
+          display: grid;
+          justify-content: space-evenly;
+          align-items: center;
+          grid-template-columns: 370px 370px 370px;
+          grid-template-rows: minmax(240px, auto);
+          margin-bottom: 7rem;
+          
+        }
+        
+        .portofolio_container .project > div{
+            border: 2px solid rgba(112, 112, 112, 0.521);
+            /* border: 2px solid red; */
+            height: 240px;
+            align-content: space-between;
+            margin: 20px 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+   
+ }
+ .project > div:nth-last-child(4){
+     grid-column: 2;
+     grid-row: 1/5;
+     align-content: flex-start;
+     height: 500px;
+     margin-top: -5px;
+     
+ }
+.project > div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-blend-mode: color;
+}
+.project  div img:hover{
+  opacity: .5;
+  transform: scale(.999);
+  transition: opacity .5s ease;
+
+
+}
+
+
+.projectName{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transform: scale(0);
+    transition: transform .5s ease;
+
+}
+.projectName h2{
+    color: #eee;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.projectName p{
+    color: #fff;
+}
+.project  div img:hover ~ .projectName{
+    transform: scale(1) !important;
+    transition: transform .5s ease;
+    /* left: ; */
+  }
+  
+
+
+  /* mobile view */
+  @media screen and (max-width:790px){
+    .portofolio_inner > p{
+        width: 100%;
+    }
+
+    .portofolio_inner > .portofolio_links{
+        width: 100%;
+      }
+
+      .portofolio_container > .project{
+       
+            /* border: 2px solid red; */
+             width: 85%;
+             height: auto;
+             z-index: 99;
+           
+             grid-template-columns: 35% 35% 35%;
+             grid-template-rows: minmax(165px, auto);
+             margin-bottom: 2rem;
+             
+           
+         
+       }
+
+
+       .portofolio_container .project > div{
+        border: 2px solid rgba(112, 112, 112, 0.521);
+        /* border: 2px solid red; */
+        height: 165px;
+        align-content: space-between;
+        margin: 4px 4px;
+        
+        z-index: 9999;
+
+
+    }
+    .portofolio_container .portofolio_links > div img{
+        width: 100%;
+    }
+        .project > div:nth-last-child(4){ 
+        
+        height: 340px;
+        margin-top: -2px;
+        
+        } 
+
+        .projectName{
+            position: absolute;
+            top: 40%;
+            left: 0;
+            width: 100%;
+            transform: scale(0);
+            transition: transform .5s ease;
+        
+        }
+        .projectName h2{
+            color: #eee;
+            /* border: 2px solid red; */
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 10px;
+        }
+        .projectName p{
+            font-size: 12px;
+        }
+
+  }
+
+
+
+
+
+@media screen and (min-width:792px) and (max-width:1140px){
+    .portofolio_inner > p{
+        width: 80%;
+    }
+
+    .portofolio_container > .project{
+       
+       
+         grid-template-columns: 35% 35% 35%;
+         grid-template-rows: minmax(190px, auto);
+        
+       
+     
+   }
+
+   
+   .portofolio_container .project > div{
+    border: 2px solid rgba(112, 112, 112, 0.521);
+    /* border: 2px solid red; */
+    height: 190px;
+    align-content: space-between;
+    margin: 4px 4px;
+    
+   
+
+
+  }
+
+
+  .project > div:nth-last-child(4){ 
+        
+    height: 410px;
+    margin-top: -3rem;
+    
+    }
+}

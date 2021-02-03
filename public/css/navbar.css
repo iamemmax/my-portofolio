@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  body{
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    /* overflow-x: hidden; */
+  }
+
+  .header-container{
+     position: relative;
+      width: 100%;
+      height: 12vh;
+      overflow: hidden;
+    }
+    
+    .header-box{
+        width: 85%;
+        display: flex;
+        margin: 0px auto;
+        height: 12vh;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        /* border: 2px solid red; */
+  }
+
+  .header-box h1{
+      color: #eee;
+      font-size: 27px;
+      font-family: 'Lobster', cursive;
+      font-weight: 500;
+  }
+
+  .header-box ul{
+      display: flex;
+      padding: 10px;
+
+  }
+  .header-box ul li a{
+      color: #eee;
+      font-weight: 500;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 14px;
+      margin: 5px;
+      transition: all .8s ease-in;
+
+  }
+  .header-box ul a:hover{
+      color: #ff4a57;
+      transition: all .8s ease-in;
+  }
+  
+  .header-box .active  a{
+    color: #ff4a57;
+    transition: all .8s ease-in;
+    
+  }
+
+  /* change background onscroll */
+  .backgroundOnStroll{
+      background: #1f2235 !important;
+      position: fixed !important;
+      z-index: 9999;
+      transition: background .7s ease-in;
+      width: 100% !important;
+      
+      
+  }
+
+  .menu-bar{
+      display: none;
+  }
+
+  /* on mobile */
+
+  @media screen and (max-width:790px){
+    body{
+    }
+    .wrapper{
+        /* background-color: red !important; */
+    }
+    .menu-bar{
+        /* border: 2px solid red; */
+        width: 50px;
+        height: 50px;
+        padding: 10px 15px;
+        cursor: pointer;
+        display: flex;
+        /* margin-right: 1rem; */
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        z-index:999;
+
+    }
+    .menu-bar > div{
+        background: #eee;
+        width:23px;
+        height: 2px;
+
+    }
+    .header-box ul{
+        position: fixed;
+        display: block;
+        background: #1f2235;
+        height: 88vh;
+        top: 12vh;
+        z-index: 999;
+        width: 250px;
+        left: 0;
+        z-index: 999999 !important;
+        transform: translateX(-100%);
+        transition: transform .7s ease-in;
+    }
+    .header-box ul a{
+        display: block;
+        line-height: 35px;
+    }
+    .toggleNav{
+        transform: translateX(0%) !important;
+        transition: transform .7s ease-in;
+    }
+    /* remove toggle class when clicking outside */
+    .header-box > nav{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        /* border: 2px solid red; */
+        left: 0;
+        bottom: 0;
+        z-index: 999;
+
+    }
+  }
