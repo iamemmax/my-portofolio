@@ -138,6 +138,7 @@ body{
     align-items: flex-start;
     height: 300px;
     max-width: 100%;
+    width: 100%;
     
     
 }
@@ -205,7 +206,7 @@ body{
 }
 .client-comment .caption .test-comment p{
   color: rgb(192, 186, 186);
-  width: 95%;
+  width: 90%;
   line-height: 27px;
   font-size: 14px;
   font-style: italic;
@@ -252,7 +253,7 @@ body{
 .test-comment p > i{
     color: red;
     font-size: 30px;
-    padding: 10px;
+    
 }
 .client-comment .testName  p{
     font-weight: 600;
@@ -298,7 +299,7 @@ body{
 }
 .comment_inner > .comment a{
     padding: 10px 25px;
-      border: 1px solid #ff4a57;
+      /* border: 1px solid #ff4a57; */
       border-radius: 20px;
       color: #eee;
       font-weight: 500;
@@ -373,7 +374,7 @@ body{
     }
     .client > div{
         /* border: 2px solid #fff; */
-        width: 48%;
+        width: 35%;
         margin: 5px;
             }
 
@@ -387,11 +388,13 @@ body{
 
             
 .client-comment > .comment_inner > div{
-    width: 100%
+    width: 100%;
+    height: auto;
 }
 .controlBtn{
     right: 0;
 } 
+
 
 }
 @media screen and (min-width:792px) and (max-width:1350px){
@@ -403,12 +406,7 @@ body{
         
     }
     .client-comment > .comment_inner div{
-        width: 48%;
-        /* margin: 10px; */
-        height:350px;
-        max-width: 100%;
-        /* border: 2px solid red; */
-    
+           
     }
     .client > div{
         width: 20%;
@@ -421,5 +419,49 @@ body{
         font-size: 100%;
        
     }
+
+
+    .client-comment .test-slider  .caption {
+        
+        height: 300px;
+        width: 400px;
+        max-width: 100%;
+        /* border: 2px solid red; */
+        
+    }
+
+    
+.client-comment > .comment_inner > div{
+/* width: 400px */
+}
+.controlBtn{
+right: 0;
+} 
+
+.client-comment > .comment_inner{
+    width: 85%;
+    margin: 4rem auto;
+    /* border: 2px solid red; */
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap row;
+    overflow-x: hidden;
+}
+
+.client-comment > .comment_inner > div{
+    width: 48%;
+    /* margin: 10px; */
+    height:350px;
+    max-width: 100%;
+    
+    
+    overflow: hidden;
+   
+}
+
+
+
 
 }
