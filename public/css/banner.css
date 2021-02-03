@@ -89,6 +89,7 @@ body{
   text-align: center;
   color: #eee;
   transition: background .5s ease-in;
+  z-index: 9999 !important;
   
 
 }
@@ -166,9 +167,12 @@ body{
 }
 
 
+
 /* mobile view */
 
 @media screen and (max-width:790px){
+
+ 
   .wrapper{
     height: 70%;
   }
@@ -187,6 +191,7 @@ body{
     height: 60% !important;
     align-items: center;
     /* border: 2px solid red; */
+   
     
 
   }
@@ -205,10 +210,8 @@ body{
     font-size: 16px;
     
   }
-  .social-media {
-    z-index: 999 !important;
-    
-  }
+  
+
 }
 
 @media screen and (min-width:792px) and (max-width:1140px){
@@ -233,6 +236,9 @@ body{
   }
 }
 
+.banner-text {
+  z-index: 2 !important;
+}
 
 
 /* page loader */

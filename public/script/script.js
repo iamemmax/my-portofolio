@@ -26,7 +26,9 @@ window.addEventListener("scroll", () =>{
 const header = document.getElementById("header")
 const menu = document.getElementById("bar")
 const ul = document.querySelector("ul")
-const nav = document.querySelector("nav")
+const clickToRemove = document.querySelector(".clickToRemove")
+
+const cancelNaav = document.getElementById("cancel")
 window.addEventListener("scroll", ()=>{
     if(pageYOffset > 50){
         header.classList.add("backgroundOnStroll")
@@ -38,15 +40,34 @@ window.addEventListener("scroll", ()=>{
 })
 
 
-    menu.addEventListener("click", ()=>{
-       ul.classList.toggle("toggleNav")
-       console.log(ul);
-    })
-    nav.addEventListener("click", ()=>{
+// menubar
+menu.addEventListener("click", (e)=>{
+        ul.classList.add("toggleNav")
+            clickToRemove.classList.add("showTab")
+            cancelNaav.classList.add("showTab")
+                menu.classList.add("remove")
+})
+
+cancelNaav.addEventListener("click", (e)=>{
+        ul.classList.remove("toggleNav")
+            clickToRemove.classList.remove("showTab")
+            cancelNaav.classList.remove("showTab")
+                menu.classList.remove("remove")
+})
+    
+
+
+clickToRemove.addEventListener("click", (e)=>{
        ul.classList.remove("toggleNav")
+         clickToRemove.classList.remove("showTab")
+         menu.classList.remove("remove")
+         cancelNaav.classList.remove("showTab")
 
-    })
+    
+})
 
+    
+    
 
     // pageloader
     
@@ -60,7 +81,7 @@ window.addEventListener("scroll", ()=>{
 // html dom
 const counters = document.querySelectorAll(".counters")
 // speed
-const speed = 1000
+const speed = 1500
 // loop through counter
 
 counters.forEach(counter =>{
@@ -72,7 +93,7 @@ counters.forEach(counter =>{
         
         if(count < target){
             counter.innerHTML = Math.ceil(count + inc)
-            setTimeout(updateCounter, 1)
+            setTimeout(updateCounter, 2)
 
         }else{
             counter.innerHTML = target
