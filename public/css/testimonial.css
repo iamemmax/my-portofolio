@@ -188,27 +188,29 @@ body{
 
 .client-comment .test-slider  .caption > div{
     width: 100%;
-    height: 200px;
-    margin: 10px;
+    height: auto;
+    margin: 5px;
     overflow: hidden;
 }
 .client-comment .caption .test-comment{
     background-color: #24263b;
-    padding: 10px;
+    padding: 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     /* font-family: 'Montserrat'  sans-serif; */
+    
 
 }
 .client-comment .caption .test-comment p{
   color: rgb(192, 186, 186);
-  width: 90%;
+  width: 95%;
   line-height: 27px;
   font-size: 14px;
   font-style: italic;
   font-weight: 500;
+  padding: 10px;
 
 }
 
@@ -216,17 +218,19 @@ body{
     display: flex;
     justify-content: flex-start;
     /* align-items: center; */
+    width: 100%;
 }
 
 .client-comment .caption .testifier div{
     width: 100px;
     height: 100px;
-    /* border: 2px solid red; */
+    /* border: 2px solid yellow; */
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-direction: column
+    flex-direction: column;
     /* margin: 10px; */
+    
 }
 .client-comment .caption .testifier div img{
    width: 50px;
@@ -236,9 +240,19 @@ body{
    align-self: center;
 }
 
+
+ .testifier > .img {
+    /* border: 1px solid blue !important; */
+    width: 70px !important;
+}
 .client-comment .testName{
     flex: 2;
     color: #fff;
+}
+.test-comment p > i{
+    color: red;
+    font-size: 30px;
+    padding: 10px;
 }
 .client-comment .testName  p{
     font-weight: 600;
@@ -354,13 +368,32 @@ body{
 
 /* mobile view */
 @media screen and (max-width:790px){
+    .client{
+        width: 100%;
+    }
     .client > div{
         /* border: 2px solid #fff; */
-        width: 45%;
+        width: 48%;
         margin: 5px;
             }
-}
 
+            .client-comment .test-slider  .caption {
+                width: 100%;
+                height: 300px;
+                max-width: 100%;
+                
+                
+            }
+
+            
+.client-comment > .comment_inner > div{
+    width: 100%
+}
+.controlBtn{
+    right: 0;
+} 
+
+}
 @media screen and (min-width:792px) and (max-width:1350px){
    
 
