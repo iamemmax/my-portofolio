@@ -25,6 +25,7 @@ body{
   height: 100vh;
   display: flex;
   background-blend-mode: normal;
+  overflow-x: hidden;
 
   
 }
@@ -169,7 +170,7 @@ body{
 
 @media screen and (max-width:790px){
   .wrapper{
-    height: 60%;
+    height: 70%;
   }
   .banner{
     top: 10% !important;
@@ -213,7 +214,7 @@ body{
 @media screen and (min-width:792px) and (max-width:1140px){
  
   .banner{
-    top: 7%;
+    top: 20%;
   }
   .social-media i{
     width: 30px;
@@ -221,10 +222,13 @@ body{
     font-size: 16px;
   }
   .wrapper{
-    height: 55%;
+    height: 65%;
   }
   .banner-text h2{
     font-size: 215% !important;
+
+  }
+  .banner-img{
 
   }
 }
@@ -245,6 +249,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 .loader .preloader{
   border: 7px solid #eee;

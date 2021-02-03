@@ -113,10 +113,11 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-flow: wrap row;
+    overflow-x: hidden;
 }
 
 .client-comment > .comment_inner div{
-    width: 550px;
+    width: 500px;
     /* margin: 10px; */
     height:350px;
     max-width: 100%;
@@ -234,9 +235,25 @@ body{
 }
 
 @media screen and (min-width:792px) and (max-width:1350px){
+   
+
+    .client-comment{
+        /* border: 2px solid blue; */
+        width: 100%;
+        
+    }
+    .client-comment > .comment_inner div{
+        width: 48%;
+        /* margin: 10px; */
+        height:350px;
+        max-width: 100%;
+        /* border: 2px solid red; */
+    
+    }
     .client > div{
-        width: 22%;
+        width: 20%;
         margin: 5px;
+        
     
     }
 

@@ -15,6 +15,7 @@ body{
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
     /* height: 1000px; */
+    
   }
 
   .about_containiner{
@@ -31,6 +32,7 @@ body{
       margin: 0px auto;
       text-align: center;
       padding-top: 5rem;
+      padding-bottom: 2rem;
   }
   
   .about-header > h2{
@@ -47,13 +49,13 @@ body{
       height: 40px !important;
       margin: 0px auto;
       margin-top: -1.5rem;
-      margin-bottom: 2rem;
+      /* margin-bottom: 2rem; */
     }
 
   .about_containiner .about-info{
-      /* border: 2px solid red; */
+      /* border: 2px solid red !important; */
       /* position: relative; */
-      width: 85%;
+      width: 85% !important;
       margin: 0px auto;
       height: auto;
       margin-bottom: 1rem !important;      
@@ -61,6 +63,8 @@ body{
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      /* display: none; */
+      overflow-x: hidden;
      
   }
   .about-info > div{
@@ -86,10 +90,10 @@ body{
       /* height: 200px; */
       display: flex;
       flex-direction: column !important;
-      /* border: 2px solid green; */
     }
     .left{
         transform: translateX(-50%);
+        /* border: 2px solid green; */
         opacity: 0 ;
         transition: transform .5s ease, opacity .5s ease-in;
     }
@@ -188,6 +192,8 @@ body{
   .abtwork_inner .abtwork_text {
       padding: 10px 0;
       position: relative;
+      /* border: 2px solid red; */
+
   }
   .abtwork_inner .abtwork_text  h2{
      font-size: 18px;
@@ -218,6 +224,8 @@ body{
       display: flex;
       justify-content: center;
       align-items: center;
+      /* border: 2px solid red; */
+
   }
 
   .skills .skills-inner{
@@ -225,7 +233,7 @@ body{
       width: 85%;
       margin: 0px auto; 
       /* border: 2px solid red; */
-      height: 90%;
+      height: auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -296,6 +304,8 @@ body{
      justify-content: center;
      align-items: flex-start;
      padding: 10px 0;
+     /* border: 2px solid red; */
+
   }
   .skill-details div{
       position: relative;
@@ -365,10 +375,18 @@ body{
 
   /* mobile view */
   @media screen and (max-width:790px){
+    .about-header > h2{
+        font-size: 20px;
+        /* border: 2px solid red !important; */
+        
+      }
+      
     .about_containiner .about-info{
         width: 90%;
         margin: 0px auto;
+        height: auto;
       }
+       
        .about_containiner .about-info p{
         width: 100%;
       }
@@ -393,7 +411,7 @@ body{
 
   @media screen and (min-width:792px) and (max-width:1350px){
     .about_containiner .about-info{
-        width: 85%;
+        width: 95%;
         margin: 0px auto;
         /* border: 2px solid red; */
     }
@@ -406,11 +424,14 @@ body{
       }
       .about-info .abtText{
           /* border: 2px solid red; */
-          flex: 1;
+          flex: 1.5;
           height: auto;
+          padding: 10px;
       }
       .about-info .abtText p{
          font-size:80%;
+         width: 90% !important;
+         
       }
       
       
@@ -426,9 +447,7 @@ body{
             width: 150px;
             padding: 10px 0;   
         }
-        .about_work{
-            
-        }
+        
         .abtwork_inner > div{
             width: 30%;
             margin: 6px;

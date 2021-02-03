@@ -16,7 +16,7 @@
 body{
   scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
-  height: 1000px;
+  /* height: 1000px; */
 }
 .service_containiner{
     width: 100%;
@@ -154,6 +154,9 @@ body{
         font-size: 27px;
     }
 
+.services-info{
+    width: 95%;
+}
     .services-info > div{
        
         width: 100%;
@@ -173,6 +176,7 @@ body{
     }
     .section-header > h2{
         font-size: 27px;
+        /* border: 2px solid red; */
     }
 
     .services-info{
