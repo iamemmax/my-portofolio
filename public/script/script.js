@@ -57,11 +57,12 @@ cancelNaav.addEventListener("click", (e)=>{
     
 
 
+// remove ul by clicking outside
 clickToRemove.addEventListener("click", (e)=>{
        ul.classList.remove("toggleNav")
-         clickToRemove.classList.remove("showTab")
-         menu.classList.remove("remove")
-         cancelNaav.classList.remove("showTab")
+             clickToRemove.classList.remove("showTab")
+                 menu.classList.remove("remove")
+                     cancelNaav.classList.remove("showTab")
 
     
 })
@@ -105,8 +106,44 @@ counters.forEach(counter =>{
 
 
 
+// Testimonial slider
+const sliders = document.querySelector(".slide-item").children
+const nextBtn = document.querySelector(".next")
+const prevBtn = document.querySelector(".prev")
+const totalSlide = sliders.length;
+let index = 0
+
+nextBtn.onclick = function(){
+    next("next")
+}
 
 
+prevBtn.addEventListener("click", ()=>{
+    next("prev")
+ 
+})
+
+
+ function next(direction){
+     if(direction === "next"){
+         index++;
+
+         if(index === totalSlide){
+             index--;
+         }
+     }else{
+         if(index === 0){
+            index = totalSlide-1
+         }else{
+             index--;
+         }
+     }
+     
+     for(i=0; i < sliders.length; i++){
+        sliders[i].classList.remove("active") 
+     }
+     sliders[index].classList.add("active");
+ }
 
 
 

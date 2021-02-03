@@ -116,14 +116,141 @@ body{
     overflow-x: hidden;
 }
 
-.client-comment > .comment_inner div{
+.client-comment > .comment_inner > div{
     width: 500px;
     /* margin: 10px; */
     height:350px;
     max-width: 100%;
-    border: 2px solid red;
+    max-width: 100%;
+    
+    overflow: hidden;
+    /* border: 2px solid red; */
+}
+
+
+
+/* testimonia slider */
+.client-comment .test-slider  .caption {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 300px;
+    max-width: 100%;
+    
+    
+}
+.client-comment  .test-slider .slide-item .items{
+    display: none;
+    position: relative;
+}
+.client-comment  .test-slider .slide-item  .active{
+    display: flex !important;
+ 
+}
+
+.controlBtn{
+    position: absolute;
+    top: 65%;
+    right: 2rem;
+    /* border: 2px solid red; */
+    transform: translateY(-50%);
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.controlBtn i{
+    border: 2px solid #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #ff4a57;
+    transition: background .7s ease;
 
 }
+.controlBtn i:hover{
+    background-color: #ff4a57;
+    color: #fff;
+    transition: background .7s ease;
+}
+
+
+
+.client-comment .test-slider  .caption > div{
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+}
+.client-comment .caption .test-comment{
+    background-color: #24263b;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* font-family: 'Montserrat'  sans-serif; */
+
+}
+.client-comment .caption .test-comment p{
+  color: rgb(192, 186, 186);
+  width: 90%;
+  line-height: 27px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+
+}
+
+.client-comment .caption .testifier{
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+}
+
+.client-comment .caption .testifier div{
+    width: 100px;
+    height: 100px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column
+    /* margin: 10px; */
+}
+.client-comment .caption .testifier div img{
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+   border: 3px solid #fff;
+   align-self: center;
+}
+
+.client-comment .testName{
+    flex: 2;
+    color: #fff;
+}
+.client-comment .testName  p{
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 0px;
+}
+.client-comment .testName span{
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(221, 221, 221, 0.685);
+}
+
 .comment_inner > .comment{
     display: flex;
     justify-content: center;
