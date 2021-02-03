@@ -394,7 +394,10 @@ body{
 .controlBtn{
     right: 0;
 } 
-
+.client > div h3{
+    font-size: 80% !important;
+   
+}
 
 }
 @media screen and (min-width:792px) and (max-width:1350px){
@@ -419,6 +422,7 @@ body{
         font-size: 100%;
        
     }
+    
 
 
     .client-comment .test-slider  .caption {
