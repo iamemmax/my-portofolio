@@ -385,9 +385,13 @@ body{
         width: 90%;
         margin: 0px auto;
         height: 1100px !important;
-        /* border: 2px solid red; */
+    }
+    
+    .abtText{
+          /* border: 2px solid red; */
+          padding: 2px !important;
+
       }
-       
        .about_containiner .about-info p{
            
         width: 100%;
@@ -401,9 +405,9 @@ body{
       }
       .moreInfo > div{
         /* border: 2px solid red; */
-        width: 45% !important;
+        width: 46% !important;
         padding: 10px 0;
-        margin: 5px !important;   
+        margin: 6px !important;   
     }
       .skills-inner > div{
         width: 100%;
