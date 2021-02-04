@@ -384,7 +384,7 @@ body{
     .about_containiner .about-info{
         width: 90%;
         margin: 0px auto;
-        height: auto;
+        height: 1100px !important;
         /* border: 2px solid red; */
       }
        
@@ -394,19 +394,16 @@ body{
 
       }
       .moreInfo{
-          border: 2px solid red;
-          width: 100%;
-          justify-content: flex-start;
-          margin-top: 1rem;
+          width: 100% !important;
           height: auto;
-          margin-bottom: 3rem !important;
-
+          justify-content: flex-start;
+          /* border: 2px solid red; */
       }
       .moreInfo > div{
-        border: 2px solid red;
-        width: 150px;
-        padding: 10px 0;   
-        margin: 5px;
+        /* border: 2px solid red; */
+        width: 45% !important;
+        padding: 10px 0;
+        margin: 5px !important;   
     }
       .skills-inner > div{
         width: 100%;
