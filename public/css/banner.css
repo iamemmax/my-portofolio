@@ -35,6 +35,7 @@ body{
   /* border: 2px solid red; */
   width: 100%;
  transform: scale(-50%);
+ -moz-transform:scale(50%);
  height: auto;
   
 }
@@ -237,6 +238,12 @@ body{
   }
 }
 
+
+
+
+
+
+
 .banner-text {
   z-index: 2 !important;
 }
@@ -291,13 +298,17 @@ body{
 /* for slide from left and right animations */
 .left{
   transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
   opacity: 0;
   transition: transform .5s ease, opacity .5s ease-in;
+  -moz-transition:transform .5s ease, opacity .5s ease-in; ;
 }
 .right{
   transform: translateX(50%);
+  -moz-transform:translateX(50%);
   opacity: 0;
   transition: transform .5s ease, opacity .5s ease-in;
+  -moz-transition:transform .5s ease, opacity .5s ease-in; ;
 }
 
 /* for slide from left and right animations */

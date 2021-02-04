@@ -99,14 +99,14 @@
     
     .clickToRemove{
         /* border: 2px solid red; */
-        width: 100%;
+        width: 80%;
         height: 90vh;
         position: fixed;
         bottom: 0;
-        left: 0;
+        right: 0;
         top:12vh;
         display: none;
-        z-index: 9999 !important;
+        z-index: 999 !important;
        
     }
     #cancle{
@@ -165,16 +165,19 @@
         background: #1f2235;
         height: 88vh;
         top: 12vh;
-        z-index: 999;
+        z-index: 999 !important;
+        border: 2px solid red;
         width: 250px;
         left: 0;
-        z-index: 3 !important;
+        /* z-index: 3 !important; */
         transform: translateX(-100%);
         transition: transform .7s ease-in;
     }
     .header-box ul a{
         display: block;
         line-height: 35px;
+        z-index: 999999 !important;
+        
     }
     .toggleNav{
         transform: translateX(0%) !important;
