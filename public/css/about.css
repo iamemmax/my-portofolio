@@ -382,13 +382,13 @@ body{
       }
       
     .about_containiner .about-info{
-        width: 90%;
+        width: 92%;
         margin: 0px auto;
         height: 1100px !important;
     }
     
     .abtText{
-          /* border: 2px solid red; */
+          border: 2px solid red;
           padding: 2px !important;
 
       }
