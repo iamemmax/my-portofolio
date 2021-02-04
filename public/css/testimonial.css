@@ -211,7 +211,7 @@ body{
   font-size: 14px;
   font-style: italic;
   font-weight: 500;
-  padding: 10px;
+  padding: 10px 40px;
 
 }
 
@@ -251,8 +251,9 @@ body{
     color: #fff;
 }
 .test-comment p > i{
-    color: red;
+    /* color: red; */
     font-size: 30px;
+    
     
 }
 .client-comment .testName  p{
@@ -296,6 +297,7 @@ body{
     line-height: 25px;
     font-weight:500;
     margin-bottom: 1.5rem;
+    
 }
 .comment_inner > .comment a{
     padding: 10px 25px;
@@ -310,7 +312,11 @@ body{
     transition: background .5s ease;
 }
 
-
+.fa-quote-left{
+    position: absolute;
+    /* border: 2px solid red !important; */
+    left: 20px;
+}
 
 /* brand company  */
 
@@ -393,6 +399,7 @@ body{
 }
 .controlBtn{
     right: 0;
+    top: 15rem;
 } 
 .client > div h3{
     font-size: 80% !important;

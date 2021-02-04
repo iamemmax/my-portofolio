@@ -174,7 +174,7 @@ body{
 
  
   .wrapper{
-    height: 70%;
+    height: 50%;
   }
   .banner{
     top: 10% !important;
@@ -196,8 +196,9 @@ body{
 
   }
   .banner-text h2{
-    font-size: 200% !important;
+    font-size: 170% !important;
     text-align: center;
+    line-height: 40px;
   }
 
   .banner-text p{
