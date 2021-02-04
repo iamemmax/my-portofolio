@@ -402,8 +402,14 @@ body{
     top: 15rem;
 } 
 .client > div h3{
-    font-size: 120% !important;
+    font-size: 130% !important;
     /* border: 2px solid red; */
+   
+}
+.client > div p {
+    font-size: 140% !important;
+    /* border: 2px solid red; */
+    padding: 10px;
    
 }
 

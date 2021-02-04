@@ -29,7 +29,7 @@
         margin: 0px auto;
         height: 12vh;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-between ;
         padding: 10px;
         /* border: 2px solid red; */
   }
@@ -44,6 +44,9 @@
   .header-box ul{
       display: flex;
       padding: 10px;
+      /* border: 2px solid red; */
+      
+      
 
   }
   .header-box ul li a{
@@ -89,9 +92,12 @@
     font-size: 30px !important;
     top: 12px;
     color: #eee;
-    right: 0rem;
+    right: 3rem;
     padding: 10px 15px;
-
+    
+  }
+  .clickToRemove{
+display: none;
   }
   /* on mobile */
 
@@ -166,10 +172,8 @@
         height: 88vh;
         top: 12vh;
         z-index: 999 !important;
-        /* border: 2px solid red; */
-        width: 230px;
+        width: 210px;
         left: 0;
-        /* z-index: 3 !important; */
         transform: translateX(-100%);
         transition: transform .7s ease-in;
     }

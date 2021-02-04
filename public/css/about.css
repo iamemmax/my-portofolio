@@ -385,11 +385,27 @@ body{
         width: 90%;
         margin: 0px auto;
         height: auto;
+        /* border: 2px solid red; */
       }
        
        .about_containiner .about-info p{
+           
         width: 100%;
+
       }
+      .moreInfo{
+          /* border: 2px solid red; */
+          width: 100%;
+          justify-content: flex-start;
+          margin-top: 1rem;
+
+      }
+      .moreInfo > div{
+        /* border: 2px solid red; */
+        width: 160px;
+        padding: 10px 0;   
+        margin: 3px;
+    }
       .skills-inner > div{
         width: 100%;
 

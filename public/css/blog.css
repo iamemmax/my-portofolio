@@ -245,7 +245,8 @@ body{
 
       .blog_post_container > div{
         width: 400px;
-        height: 430px;
+        height: 410px;
+        /* border: 2px solid red; */
       
     }
     .blog_post_container  .blogImg div{

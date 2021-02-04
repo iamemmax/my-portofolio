@@ -111,8 +111,11 @@ body{
   padding: 8px 0;
   color: rgb(160, 160, 160);
   font-size: 18px;
-  font-weight: 100;
-  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  /* font-family: 'Lobster', cursive; */
+  font-family: 'Montserrat'  sans-serif;
+  opacity: .8;
+  line-height: 30px;
 
 }
 
