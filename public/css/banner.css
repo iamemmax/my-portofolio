@@ -115,7 +115,9 @@ body{
   /* font-family: 'Lobster', cursive; */
   font-family: 'Montserrat'  sans-serif;
   opacity: .8;
-  line-height: 30px;
+  line-height: 25px;
+  margin-top: -10px;
+  
 
 }
 

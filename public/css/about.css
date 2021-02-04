@@ -394,17 +394,19 @@ body{
 
       }
       .moreInfo{
-          /* border: 2px solid red; */
+          border: 2px solid red;
           width: 100%;
           justify-content: flex-start;
           margin-top: 1rem;
+          height: auto;
+          margin-bottom: 3rem !important;
 
       }
       .moreInfo > div{
-        /* border: 2px solid red; */
-        width: 160px;
+        border: 2px solid red;
+        width: 150px;
         padding: 10px 0;   
-        margin: 3px;
+        margin: 5px;
     }
       .skills-inner > div{
         width: 100%;
