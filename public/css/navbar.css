@@ -166,8 +166,8 @@
         height: 88vh;
         top: 12vh;
         z-index: 999 !important;
-        border: 2px solid red;
-        width: 250px;
+        /* border: 2px solid red; */
+        width: 230px;
         left: 0;
         /* z-index: 3 !important; */
         transform: translateX(-100%);
