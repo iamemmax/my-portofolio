@@ -382,14 +382,13 @@ body{
       }
       
     .about_containiner .about-info{
-        width: 92%;
+        width: 90%;
         margin: 0px auto;
         height: 1100px !important;
     }
     
     .abtText{
-          border: 2px solid red;
-          padding: 2px !important;
+          /* border: 2px solid red; */
 
       }
        .about_containiner .about-info p{
@@ -405,7 +404,7 @@ body{
       }
       .moreInfo > div{
         /* border: 2px solid red; */
-        width: 46% !important;
+        width: 45.5% !important;
         padding: 10px 0;
         margin: 6px !important;   
     }
