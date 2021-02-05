@@ -1,11 +1,12 @@
 const fade = document.querySelectorAll('.fade')
 const slideIn = document.querySelectorAll('.slideIn')
 const slideDowns = document.querySelectorAll('.slidedown')
+const standStill = document.querySelectorAll('.standstill')
 // console.log(slideIn.length);
 
 const slideOption = { 
-    threshold:0.4,
-    rootMargin:"-80px -50px 0px 0px"
+    threshold:0.3,
+    rootMargin:"-20px -50px 20px 0px"
 
 }
 const slideObserver = new IntersectionObserver((entries, slideObserver)=>{
@@ -35,5 +36,9 @@ slideIn.forEach(slide =>{
 })
 slideDowns.forEach(slideDown =>{
     slideObserver.observe(slideDown)
+    
+})
+standStill.forEach(stand =>{
+    slideObserver.observe(stand)
     
 })
