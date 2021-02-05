@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-require("dotenv").config()
+require("dotennpm").config()
 const mailer = require("nodemailer")
 
 const indexRouter = require('./routes/index');
@@ -33,6 +33,9 @@ app.get("/", (req, res)=>{
 })
 
 app.post("/", (req, res) =>{
+ 
+ 
+  // console.log(Receiver);
   const name = req.body.name
   const email = req.body.email
   const subject = req.body.subject
@@ -42,15 +45,15 @@ app.post("/", (req, res) =>{
   const transporter = mailer.createTransport({
     service: 'gmail',
     auth: {
-      user: "iam4emmax@gmail.com",
-      pass: "09069003426"
+      user: process.env.USER,
+      pass: process.env.PASS
     }
   });
   
   const mailOptions = {
     name:name,
     from: email,
-    to: 'iam4emmax@gmail.com',
+    to:process.env.USER,
     subject: subject,
     text: msg
   };
