@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-require("dotennpm").config()
+require("dotenv").config()
 const mailer = require("nodemailer")
 
 const indexRouter = require('./routes/index');
@@ -61,7 +61,7 @@ app.post("/", (req, res) =>{
   transporter.sendMail(mailOptions, function(error, info){
     if (error) {
       console.log(error);
-    } else {
+    } else {ss
       console.log('Email sent: ' + info.response);
       res.redirect("/")
     }
