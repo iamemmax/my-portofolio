@@ -45,15 +45,15 @@ app.post("/", (req, res) =>{
   const transporter = mailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.USER,
-      pass: process.env.PASS
+      user:"iam4emmax@gmail.com",
+      pass: "09069003426"
     }
   });
   
   const mailOptions = {
     name:name,
     from: email,
-    to:process.env.USER,
+    to:"iam4emmax@gmail.com",
     subject: subject,
     text: msg
   };
