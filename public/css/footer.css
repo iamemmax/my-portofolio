@@ -1,0 +1,28 @@
+footer{
+    position: relative;
+    /* border: 2px solid red; */
+    width:100%;
+    height: 50px;
+    padding: 10px;
+    background: #24263b;
+    text-align: center;
+    height: 300px;
+}
+.footer-container{
+    position: absolute;
+    /* border: 2px solid red; */
+    bottom: 0;
+    width:100%;
+    height: 50px;
+    padding: 10px;
+    background: #2b2d42;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container p{
+    font-size: 14px;
+    color: #eee;
+    font-weight: 500;
+}
