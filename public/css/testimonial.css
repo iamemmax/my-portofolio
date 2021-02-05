@@ -201,6 +201,8 @@ body{
     align-items: center;
     flex-direction: column;
     /* font-family: 'Montserrat'  sans-serif; */
+    /* border: 2px solid red; */
+    height: 200px !important;
     
 
 }
@@ -366,6 +368,11 @@ body{
     transition: transform .5s ease;
     transform: scale(0.9);
    
+}
+.slideAni{
+    transition: all .7s ease-in;
+    -moz-transition: all .7s ease-in;
+    -webkit-transition: all .7s ease-in;
 }
 
 

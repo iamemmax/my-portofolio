@@ -140,9 +140,13 @@ prevBtn.addEventListener("click", ()=>{
      }
      
      for(i=0; i < sliders.length; i++){
-        sliders[i].classList.remove("active") 
+        sliders[i].classList.remove("active")
+        sliders[i].classList.add("slideAni")
+
      }
      sliders[index].classList.add("active");
+     sliders[i].classList.add("slideAni")
+
  }
 
 

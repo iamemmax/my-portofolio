@@ -5,8 +5,8 @@ const standStill = document.querySelectorAll('.standstill')
 // console.log(slideIn.length);
 
 const slideOption = { 
-    threshold:0.3,
-    rootMargin:"-20px -50px 20px 0px"
+    threshold:0.4,
+    rootMargin:"-20px -50px 0px 0px"
 
 }
 const slideObserver = new IntersectionObserver((entries, slideObserver)=>{
