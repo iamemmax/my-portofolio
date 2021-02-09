@@ -3,7 +3,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 require("dotenv").config()
-const mailer = require("nodemailer")
+const mail = require("nodemailer")
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -34,39 +34,51 @@ app.get("/", (req, res)=>{
 
 app.post("/", (req, res) =>{
  
- 
-  // console.log(Receiver);
-  const name = req.body.name
-  const email = req.body.email
-  const subject = req.body.subject
-  const msg = req.body.msg
+  const name = req.body.name;
+  const email = req.body.email;
+  const subject = req.body.subject;
+  const msg = req.body.msg;
+    const adminEmail = process.env.ADMIN_EMAIL
+    const adminPass =  process.env.ADMIN_PASS
+    
+    
+    let error = [];
 
 
-  const transporter = mailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user:"iam4emmax@gmail.com",
-      pass: "09069003426"
+    try {
+        if(!name || !email || !msg || !subject){
+            error.push(error, "this field is important")
+            res.redirect('/')
+        }else{
+            var transporter = mail.createTransport({
+                service: 'gmail',
+                auth: {
+                  user: adminEmail,
+                  pass: adminPass
+                }
+              });
+              
+              var mailOptions = {
+                from: email,
+                to: adminEmail,
+                subject: subject,
+                text:msg,
+                html:`<b>Hey ${name}! </b><br> ${msg}`
+              };
+              
+              transporter.sendMail(mailOptions, function(error, info){
+                if (error) {
+                  console.log(error);
+                } else {
+                  console.log('Email sent: ' + info.response);
+                  res.redirect(`/`)
+                }
+              });
+        }
+    } catch (error) {
+        console.log(error);
     }
-  });
-  
-  const mailOptions = {
-    name:name,
-    from: email,
-    to:"iam4emmax@gmail.com",
-    subject: subject,
-    text: msg
-  };
-  
-  transporter.sendMail(mailOptions, function(error, info){
-    if (error) {
-      console.log(error);
-    } else {ss
-      console.log('Email sent: ' + info.response);
-      res.redirect("/")
-    }
-  });
-
+    console.log(username);
 })
 
 

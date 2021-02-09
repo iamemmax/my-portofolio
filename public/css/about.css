@@ -437,7 +437,7 @@ body{
   @keyframes node{
       from{
           width:0;
-          transition: width 18s ease-in;
+          transition: width 8s ease-in;
       }
       to{
           width: 50%;
