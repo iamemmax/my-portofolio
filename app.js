@@ -32,7 +32,7 @@ app.get("/", (req, res)=>{
   })
 })
 
-app.post("/", (req, res) =>{
+app.post("/", async (req, res) =>{
  
   const name = req.body.name;
   const email = req.body.email;
@@ -66,7 +66,7 @@ app.post("/", (req, res) =>{
                 html:`<b>Hey ${name}! </b><br> ${msg}`
               };
               
-              transporter.sendMail(mailOptions, function(error, info){
+            await  transporter.sendMail(mailOptions, function(error, info){
                 if (error) {
                   console.log(error);
                 } else {
@@ -78,7 +78,6 @@ app.post("/", (req, res) =>{
     } catch (error) {
         console.log(error);
     }
-    console.log(username);
 })
 
 
