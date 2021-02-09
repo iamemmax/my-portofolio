@@ -63,7 +63,7 @@ app.post("/", async (req, res) =>{
                 to: adminEmail,
                 subject: subject,
                 text:msg,
-                html:`<b>Hey ${name}! </b><br> ${msg}`
+                html:`<b>Hey ${name}! </b><br> ${email} <br> ${msg}`
               };
               
             await  transporter.sendMail(mailOptions, function(error, info){
