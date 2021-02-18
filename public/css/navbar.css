@@ -73,7 +73,7 @@
   /* change background onscroll */
   .backgroundOnStroll{
       background: #1f2235 !important;
-      /* position: fixed !important; */
+      position: fixed !important;
       z-index: 9999;
       transition: background .7s ease-in;
       width: 100% !important;
