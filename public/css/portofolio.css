@@ -83,14 +83,12 @@ body{
       border-radius: 20px;
       cursor: pointer;
       margin-bottom: 2rem !important;
+      color: rgba(238, 238, 238, 0.801); 
+      font-size: 14px;
+      font-weight: 500;
+      transition: all .5s ease;
     }
-    .portofolio_links > div a{
-        color: rgba(238, 238, 238, 0.801); 
-        font-size: 14px;
-        font-weight: 500;
-        padding: 7px 0px;
     
-    }
 
     .portofolio_links > div:hover{
       background: var(--primarry);
@@ -127,6 +125,17 @@ body{
             overflow: hidden;
 
    
+ }
+
+ .project .hide{
+    display: none !important;
+    transition: all .5s ease;
+
+ }
+ .project .show{
+     display: grid;
+     transition: all .5s ease;
+
  }
  .project > div:nth-last-child(4){
      grid-column: 2;
@@ -171,7 +180,7 @@ body{
 .projectName p{
     color: #fff;
 }
-.project  div img:hover ~ .projectName{
+.project  div img:hover ~ .projectName {
     transform: scale(1) !important;
     transition: transform .5s ease;
     /* left: ; */

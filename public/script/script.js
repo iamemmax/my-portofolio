@@ -147,6 +147,7 @@ prevBtn.addEventListener("click", ()=>{
      sliders[index].classList.add("active");
      sliders[i].classList.add("slideAni")
 
+
  }
 
 

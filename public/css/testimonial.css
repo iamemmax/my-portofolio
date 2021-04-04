@@ -410,8 +410,9 @@ body{
     top: 15rem;
 } 
 .client > div h3{
-    font-size: 130% !important;
+    font-size: 120% !important;
     /* border: 2px solid red; */
+    font-weight: 400;
    
 }
 .client > div p {
