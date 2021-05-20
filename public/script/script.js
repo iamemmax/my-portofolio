@@ -128,7 +128,7 @@ prevBtn.addEventListener("click", ()=>{
      if(direction === "next"){
          index++;
 
-         if(index === totalSlide){
+         if(index == totalSlide){
              index--;
          }
      }else{
@@ -145,12 +145,17 @@ prevBtn.addEventListener("click", ()=>{
 
      }
      sliders[index].classList.add("active");
-     sliders[i].classList.add("slideAni")
+
 
 
  }
 
 
+ window.addEventListener("load", ()=>{
+    setInterval(()=>{
+        next()
+    },5000)
+})
 
 
 
