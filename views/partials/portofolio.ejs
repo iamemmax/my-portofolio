@@ -18,7 +18,7 @@
 
 
     <div class="project">
-        <div class="projects"  data-select="nodejs">
+        <div class="projects1 projects"  data-select="nodejs">
             <a href="http://wakeup9ja.herokuapp.com">
             <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
             <div class="projectName">
@@ -28,7 +28,7 @@
             </a>
         </div>
 
-        <div class="projects"  data-select="nodejs">
+        <div class="projects2 projects"  data-select="nodejs">
             <a href="https://freaky-store.herokuapp.com/">
                 <img src="https://images.unsplash.com/photo-1612068661767-06b8b2295ab8?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
                 <div class="projectName" >
@@ -37,7 +37,7 @@
                 </div>
                 </a>
         </div>
-        <div class="projects" data-select="react">
+        <div class="projects3 projects" data-select="react">
             
             <img src="https://images.unsplash.com/photo-1554576575-a4e7b6e8409d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nzh8fGNvbXB1dGVyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
             <div class="projectName" >
@@ -46,7 +46,7 @@
             </div>
         
         </div>
-        <div class="projects" data-select="nodejs">
+        <div class="projects4 projects" data-select="nodejs">
             
 
                 <img src="https://images.unsplash.com/photo-1577239458058-b179bc7479bf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTI1fHxjb21wdXRlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
@@ -57,7 +57,7 @@
                 </div>
             
         </div>
-        <div class="projects" data-select="express">
+        <div class="projects5 projects " data-select="express">
             
             
                 <img src="https://images.unsplash.com/photo-1558959357-685f9c7ace7b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjE4fHxjb21wdXRlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
@@ -83,19 +83,22 @@ link.forEach(data =>{
         data.classList.add("active")
         
         let projectBtn = data.getAttribute("data-select")
-    
+        
         projectName.forEach(project =>{
 
 
-          let projectImg =  project.getAttribute("data-select")
+            let projectImg =  project.getAttribute("data-select")
+        
 
             if(projectBtn === projectImg ||  projectBtn === "all"){
                 project.classList.remove("hide")
                 project.classList.add("show")
+                console.log("all");
                 
             }else{
                 project.classList.remove("show")
                 project.classList.add("hide")
+                console.log("no");
 
 
 

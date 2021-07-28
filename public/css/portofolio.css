@@ -26,6 +26,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 1;
     
 }
 
@@ -102,29 +103,55 @@ body{
  .portofolio_container > .project{
          /* border: 2px solid red; */
           width: 85%;
-          height: 500px;
+          height: 600px;
           position: relative;
           display: grid;
-          justify-content: space-evenly;
-          align-items: center;
-          grid-template-columns: 370px 370px 370px;
-          grid-template-rows: minmax(240px, auto);
-          margin-bottom: 7rem;
-          
+          grid-template-columns: repeat(11, 1fr);
+          grid-template-rows: repeat(7, minmax(70px, auto));
+         grid-gap: 10px;
+         padding: 10px;
+         /* margin-top: 8rem; */
+         margin-bottom: 7rem;
         }
         
         .portofolio_container .project > div{
             border: 2px solid rgba(112, 112, 112, 0.521);
-            /* border: 2px solid red; */
-            height: 240px;
-            align-content: space-between;
-            margin: 20px 5px;
-            border-radius: 10px;
-            cursor: pointer;
+            /* height: 140px; */
             position: relative;
-            overflow: hidden;
-
    
+ }
+
+  .projects1{
+   grid-column: 1/4;
+   grid-row: 1/4;
+ }
+ 
+ .projects2{
+    grid-column: 4/9;
+   grid-row: 1/8;
+    
+ }
+ .projects3{
+    grid-column: 9/12;
+    grid-row: 1/4;
+    
+ }
+ .projects4{
+    grid-column: 1/4 ;
+    grid-row: 4/8;
+   
+    
+ }
+ .projects5{
+    grid-column: 9/12;
+    grid-row: 4/8;
+    
+ } 
+
+ .project div img{
+     width: 100%;
+     /* object-fit: cover; */
+     height: 100%;
  }
 
  .project .hide{
@@ -133,36 +160,16 @@ body{
 
  }
  .project .show{
-     display: grid;
+     display: grid ;
      transition: all .5s ease;
 
  }
- .project > div:nth-last-child(4){
-     grid-column: 2;
-     grid-row: 1/5;
-     align-content: flex-start;
-     height: 500px;
-     margin-top: -5px;
-     
- }
-.project > div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-blend-mode: color;
-}
-.project  div img:hover{
-  opacity: .5;
-  transform: scale(.999);
-  transition: opacity .5s ease;
-
-
-}
+ 
 
 
 .projectName{
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 30%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -200,16 +207,10 @@ body{
 
       .portofolio_container > .project{
        
-            /* border: 2px solid red; */
-             width: 85%;
-             height: auto;
-             z-index: 99;
-           
-             grid-template-columns: 35% 35% 35%;
-             grid-template-rows: minmax(165px, auto);
-             margin-bottom: 2rem;
+           display: flex;
+           flex-direction: column;
              
-           
+           height: auto;
          
        }
 
@@ -217,9 +218,10 @@ body{
        .portofolio_container .project > div{
         border: 2px solid rgba(112, 112, 112, 0.521);
         /* border: 2px solid red; */
-        height: 165px;
+        height: 280px !important;
+        width: 100%;
         align-content: space-between;
-        margin: 4px 4px;
+        margin: 10px;
         
         z-index: 9999;
 
@@ -270,31 +272,9 @@ body{
     .portofolio_container > .project{
        
        
-         grid-template-columns: 35% 35% 35%;
-         grid-template-rows: minmax(190px, auto);
+         /* grid-template-columns: 35% 35% 35%;
+         grid-template-rows: minmax(190px, auto); */
         
        
-     
-   }
-
-   
-   .portofolio_container .project > div{
-    border: 2px solid rgba(112, 112, 112, 0.521);
-    /* border: 2px solid red; */
-    height: 190px;
-    align-content: space-between;
-    margin: 4px 4px;
-    
-   
-
-
-  }
-
-
-  .project > div:nth-last-child(4){ 
-        
-    height: 410px;
-    margin-top: -3rem;
-    
-    }
+    }  
 }
