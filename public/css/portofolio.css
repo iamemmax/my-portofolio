@@ -197,6 +197,10 @@ body{
 
   /* mobile view */
   @media screen and (max-width:790px){
+
+    .project{
+        width: 100% !important;
+    }
     .portofolio_inner > p{
         width: 100%;
     }
@@ -221,7 +225,7 @@ body{
         height: 280px !important;
         width: 100%;
         align-content: space-between;
-        margin: 10px;
+        margin-top: 5px;
         
         z-index: 9999;
 
@@ -229,13 +233,10 @@ body{
     }
     .portofolio_container .portofolio_links > div img{
         width: 100%;
+        
+        
     }
-        .project > div:nth-last-child(4){ 
         
-        height: 340px;
-        margin-top: -2px;
-        
-        } 
 
         .projectName{
             position: absolute;
