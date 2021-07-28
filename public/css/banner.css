@@ -34,8 +34,6 @@ body{
   top: 20%;
   /* border: 2px solid red; */
   width: 100%;
- transform: scale(-50%);
- -moz-transform:scale(50%);
  height: auto;
   
 }

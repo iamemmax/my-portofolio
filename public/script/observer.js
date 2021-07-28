@@ -22,6 +22,9 @@ const slideObserver = new IntersectionObserver((entries, slideObserver)=>{
     })
 
 
+    
+
+
 }, slideOption)
 
 
