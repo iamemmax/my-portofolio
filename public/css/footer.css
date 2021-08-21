@@ -17,6 +17,10 @@ body{
     /* height: 1000px; */
     overflow-x: hidden;
     
+    
+  }
+  html{
+      scroll-behavior: smooth;
   }
 footer{
     position: relative;
