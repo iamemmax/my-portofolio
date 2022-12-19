@@ -187,6 +187,7 @@ display: none;
     .toggleNav{
         transform: translateX(0%) !important;
         transition: transform .7s ease-in;
+         z-index: 999999999999 !important;
     }
     /* remove toggle class when clicking outside */
    
