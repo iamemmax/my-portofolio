@@ -172,7 +172,7 @@ display: none;
         background: #1f2235;
         height: 88vh;
         top: 12vh;
-        z-index: 999 !important;
+        z-index: 999999 !important;
         width: 210px;
         left: 0;
         transform: translateX(-100%);
